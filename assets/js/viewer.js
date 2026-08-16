@@ -163,6 +163,11 @@ export function mountViewer(root) {
   controls.enablePan = false;
   controls.rotateSpeed = 0.85;
   controls.zoomSpeed = 0.7;
+  /* A full-bleed viewer that consumes the wheel traps the page: the hero fills
+     the first viewport, so there is nowhere left to put the cursor to scroll
+     past it. Wheel zoom belongs to the bounded viewers on the coupon pages.
+     Keyboard +/- still zooms everywhere, so no viewer loses the capability. */
+  controls.enableZoom = root.dataset.zoom !== 'off';
   controls.autoRotate = !REDUCED && root.dataset.spin !== 'off';
   controls.autoRotateSpeed = 0.85;
   controls.minPolarAngle = 0.18;

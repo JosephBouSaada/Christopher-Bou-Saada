@@ -1,7 +1,7 @@
 {
   "schemaVersion": 2,
   "generatedAt": "2026-08-16T04:37:05.672Z",
-  "title": "Design System: Christopher Vale — Mechanical Design & CAD",
+  "title": "Design System: Christopher Bou Saada — Mechanical Design & CAD",
   "extensions": {
     "colorMeta": {
       "void": {
@@ -571,7 +571,7 @@
       "kind": "nav",
       "refersTo": "nav-link",
       "description": "The sticky header. Issuer mark with a finish-tinted underline; the contact path is the only filled element.",
-      "html": "<header class=\"ds-nameplate\"><a class=\"ds-mark\" href=\"#\"><b>Christopher Vale</b><em>Mechanical design</em></a><nav class=\"ds-nav\"><a href=\"#\">Work</a><a href=\"#\">Capability</a><a href=\"#\" class=\"is-primary\">Contact</a></nav></header>",
+      "html": "<header class=\"ds-nameplate\"><a class=\"ds-mark\" href=\"#\"><b>Christopher Bou Saada</b><em>Mechanical design</em></a><nav class=\"ds-nav\"><a href=\"#\">Work</a><a href=\"#\">Capability</a><a href=\"#\" class=\"is-primary\">Contact</a></nav></header>",
       "css": ".ds-nameplate { display: flex; align-items: center; gap: 32px; height: 56px; padding-inline: 32px; background: color-mix(in srgb, var(--plate, #191b1e) 86%, transparent); backdrop-filter: blur(14px) saturate(1.2); border-bottom: 1px solid var(--rule, #32373b); } .ds-mark { display: flex; align-items: baseline; gap: 8px; text-decoration: none; color: var(--alu, #d4d9dc); font-family: Archivo, system-ui, sans-serif; font-weight: 700; font-variation-settings: 'wdth' 108; letter-spacing: 0.02em; text-transform: uppercase; font-size: 0.875rem; white-space: nowrap; } .ds-mark b { font-weight: 800; border-bottom: 2px solid var(--dye, #d99a2b); transition: border-color 0.4s cubic-bezier(0.16,1,0.3,1); } .ds-mark em { font-style: normal; font-family: 'Azeret Mono', ui-monospace, Menlo, monospace; font-size: 0.75rem; letter-spacing: 0.16em; color: var(--alu-faint, #848b8f); } .ds-nav { margin-left: auto; display: flex; align-items: center; gap: 8px; } .ds-nav a { font-family: 'Azeret Mono', ui-monospace, Menlo, monospace; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--alu-dim, #949b9f); text-decoration: none; padding: 8px 16px; border: 1px solid transparent; border-radius: 0; transition: color 0.16s, border-color 0.16s, background-color 0.16s; } .ds-nav a:hover { color: var(--alu, #d4d9dc); border-color: var(--rule, #32373b); } .ds-nav a.is-primary { color: var(--void, #0e0f10); background: var(--dye, #d99a2b); border-color: var(--dye, #d99a2b); font-weight: 600; transition: background-color 0.4s cubic-bezier(0.16,1,0.3,1), border-color 0.4s cubic-bezier(0.16,1,0.3,1), filter 0.16s; } .ds-nav a.is-primary:hover { filter: brightness(1.14); } .ds-nav a:focus-visible { outline: 2px solid var(--ink, #f0b955); outline-offset: 2px; }"
     },
     {

@@ -1,4 +1,4 @@
-# Christopher Vale — CAD portfolio
+# Christopher Bou Saada — CAD portfolio
 
 A static site for GitHub Pages. No build step, no framework, no npm install
 needed to deploy. Every project is a machined **coupon**: a spec stamp, an
@@ -17,7 +17,6 @@ below is real. Replace it, then delete the strip.
 
 | Where | What is fake | Replace with |
 |---|---|---|
-| Every page, `<title>` / footer / nameplate | The name **Christopher Vale** | His real name and its correct spelling |
 | `index.html` nameplate | "Mechanical design" | His actual discipline / title |
 | Footer, all pages | `hello@example.com` | Real email |
 | Footer, all pages | `City, Country` | Real location |
@@ -137,7 +136,7 @@ script **writes** the static pages; it is never needed to serve them.
 ```bash
 git init
 git add .
-git commit -m "Christopher Vale portfolio"
+git commit -m "Christopher Bou Saada portfolio"
 git branch -M main
 git remote add origin https://github.com/<user>/<repo>.git
 git push -u origin main

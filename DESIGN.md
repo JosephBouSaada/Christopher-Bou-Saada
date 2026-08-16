@@ -1,5 +1,5 @@
 ---
-name: Christopher Vale — Mechanical Design & CAD
+name: Christopher Bou Saada — Mechanical Design & CAD
 description: A portfolio built as an anodize sample card, where the page accent is the finish the visitor selected.
 colors:
   void: "#0e0f10"
@@ -154,7 +154,7 @@ components:
     height: "42px"
 ---
 
-# Design System: Christopher Vale — Mechanical Design & CAD
+# Design System: Christopher Bou Saada — Mechanical Design & CAD
 
 ## Overview
 

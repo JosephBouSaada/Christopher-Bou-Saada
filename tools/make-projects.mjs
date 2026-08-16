@@ -263,7 +263,7 @@ function revrows(revs) {
 }
 
 function page(p, prev, next) {
-  const title = `${p.title} · ${p.pn} — Christopher Vale`;
+  const title = `${p.title} · ${p.pn} — Christopher Bou Saada`;
   return `<!doctype html>
 <html lang="en" class="no-js" data-finish="${p.finish}">
 <head>
@@ -310,7 +310,7 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
 
 <header class="nameplate">
   <a class="nameplate__mark" href="../../">
-    <b>Christopher Vale</b>
+    <b>Christopher Bou Saada</b>
     <em>Mechanical design</em>
   </a>
   <nav class="nameplate__nav" aria-label="Primary">
@@ -451,7 +451,7 @@ ${revrows(p.revisions)}
   <div class="titleblock__grid">
     <div class="titleblock__cell titleblock__issuer">
       <span class="k">Issued by</span>
-      <span class="v">Christopher Vale</span>
+      <span class="v">Christopher Bou Saada</span>
       <p class="stamp" style="text-transform:none;letter-spacing:0.02em;line-height:1.6">
         Available for mechanical design work and full-time engineering roles.
       </p>
@@ -471,8 +471,8 @@ ${revrows(p.revisions)}
   </div>
   <div class="titleblock__foot">
     <span>${p.pn} · Sheet 1 of 1</span>
-    <span>Drawn by C. Vale</span>
-    <span>&copy; <span data-year>2026</span> Christopher Vale</span>
+    <span>Drawn by C. Bou Saada</span>
+    <span>&copy; <span data-year>2026</span> Christopher Bou Saada</span>
   </div>
 </footer>
 

@@ -100,9 +100,14 @@ assembly relationships for themselves.
 
 **Explicitly undecided / not yet supplied**
 
-- Christopher's real name spelling, current status (student, recent graduate, or
-  years of experience), location, CAD software list, email address, LinkedIn or
-  GrabCAD profile, and whether a CV will be linked.
+- Christopher's current status (student, recent graduate, or years of
+  experience), location, CAD software list, email address, LinkedIn or GrabCAD
+  profile, and whether a CV will be linked.
+
+**Supplied since**
+
+- Name: **Christopher Bou Saada**. Used across every `<title>`, nameplate, and
+  title block.
 - The project set: titles, count, context, constraints solved, materials, and
   outcomes.
 - Whether any work is under NDA or otherwise cannot be shown.

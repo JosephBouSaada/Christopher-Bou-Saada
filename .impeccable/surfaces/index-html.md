@@ -61,6 +61,6 @@ the signature interaction.
 
 ## Unresolved
 
-Christopher's real name, status, location, software list, contact details, CV,
+Christopher's status, location, software list, contact details, CV,
 and the actual project set. All present as marked placeholders on the
 replacement list in README.md.
