@@ -24,7 +24,7 @@ below is real. Replace it, then delete the strip.
 | Footer, `index.html` | "Available for mechanical design work and full-time engineering roles." | Confirm this is true |
 | `index.html` → Capability | CAD packages, processes, materials, finishes | What he actually uses |
 | `index.html` → Capability | "How a part gets issued" (5 stages) | His real working method, or delete the table |
-| All six projects | Titles, part numbers, specs, masses, tolerances, constraints, revision histories | Real projects |
+| All seven projects | Titles, part numbers, specs, masses, tolerances, constraints, revision histories | Real projects |
 | `assets/models/*` | Generated stand-in geometry | His CAD exports |
 | `assets/renders/*` | Renders of the stand-ins | Renders of his parts (or regenerate — see below) |
 
@@ -125,7 +125,7 @@ cannot find one.
 5. Delete one `coupon--ghost` block, or leave them — they are the deliberate
    "slot reserved" state.
 
-If you would rather keep the six project pages consistent, edit the `PROJECTS`
+If you would rather keep the seven project pages consistent, edit the `PROJECTS`
 array in `tools/make-projects.mjs` and run `node tools/make-projects.mjs`. That
 script **writes** the static pages; it is never needed to serve them.
 
@@ -169,7 +169,7 @@ python3 -m http.server 8000
 ## How it is put together
 
 ```
-index.html              the rack — hero specimen, six coupons, capability, title block
+index.html              the rack — hero specimen, seven coupons, capability, title block
 projects/<part-no>/     one page per coupon; plain static HTML
 assets/css/site.css     the whole design system, one file, commented by section
 assets/js/finishes.js   the dye rack: chip colour, text ink, PBR values, spec rows

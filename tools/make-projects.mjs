@@ -228,6 +228,41 @@ const PROJECTS = [
       ['D', 'Released', 'Powder coat spec added, bend lines marked'],
     ],
   },
+  {
+    pn: 'WH-0784',
+    slug: 'wh-0784',
+    file: 'wh-0784-main-wheel',
+    model: 'wh-0784-main-wheel.glb',
+    title: 'A320 main wheel half',
+    finish: 'violet',
+    lede: 'The inboard half of a two-piece main wheel, with the bead seat and the tie-bolt flange turned in the same setup so the joint face stays square to the axis.',
+    prose: [
+      'A two-piece wheel is really one joint pretending to be a part. Everything that matters &mdash; bead retention, bearing alignment, how evenly the tie bolts load &mdash; comes back to whether the two halves meet on a face that is actually perpendicular to the bore.',
+      'So the bead seat, the joint face and the bearing register are cut without releasing the part. Concentricity between them is then a machine tolerance rather than a stack of separate setups, and the halves interchange without being matched at assembly.',
+      'The web is scalloped between the bolt bosses rather than left solid. It removes rotating mass where the section does no work, and it gives the inspector line of sight to the back of every boss without a mirror.',
+    ],
+    spec: [
+      ['Material', '2014-T6 forging'],
+      ['Process', 'CNC turn, 5-axis mill'],
+      ['Envelope', '&#8960;262 &times; 177 mm'],
+      ['Mass', '4.18 kg'],
+      ['Key tolerance', '&#8960;140 H6 bearing register'],
+      ['Mesh', '10 868 triangles &middot; 241 KB'],
+    ],
+    constraints: [
+      ['Envelope', '&#8960;262 &times; 177 mm inside the brake stack'],
+      ['Register', '&#8960;140 H6 for the bearing cup'],
+      ['Interface', '12 &times; M12 tie bolts on &#8960;206 PCD'],
+      ['Joint face', 'Perpendicular to the bore within 0.02 mm'],
+      ['Must not', 'require the halves to be matched at assembly'],
+    ],
+    revisions: [
+      ['A', 'First issue', 'Solid web, bosses blended into the flange'],
+      ['B', 'Web scalloped', 'Rotating mass removed where the section carried no load'],
+      ['C', 'Joint face reworked', 'Cut in the bore setup; matched halves were no longer needed'],
+      ['D', 'Released for quote', 'Bead seat Ra 0.8 called, tie-bolt torque noted on the face'],
+    ],
+  },
 ];
 
 /* ------------------------------------------------------------- the fragments */

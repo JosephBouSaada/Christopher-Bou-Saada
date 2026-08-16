@@ -26,6 +26,7 @@ const SPECIMENS = [
   ['mn-0421-manifold-block.stl', 'black'],
   ['sh-0537-spindle-housing.stl', 'blue'],
   ['tl-0663-chassis-rail.stl', 'olive'],
+  ['wh-0784-main-wheel.glb', 'violet'],
 ];
 
 const MIME = {
