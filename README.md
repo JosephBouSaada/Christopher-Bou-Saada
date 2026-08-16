@@ -21,9 +21,7 @@ below is real. Replace it, then delete the strip.
 | Footer, `index.html` | "Available for mechanical design work and full-time engineering roles." | Confirm this is true |
 | `index.html` → Capability | CAD packages, processes, materials, finishes | What he actually uses |
 | `index.html` → Capability | "How a part gets issued" (5 stages) | His real working method, or delete the table |
-| All seven projects | Titles, part numbers, specs, masses, tolerances, constraints, revision histories | Real projects |
-| `assets/models/*` | Generated stand-in geometry | His CAD exports |
-| `assets/renders/*` | Renders of the stand-ins | Renders of his parts (or regenerate — see below) |
+| `WH-0784` | Material, process, mass, tolerance, prose, revision history | His real figures. Envelope and mesh stats are measured from the model and are already correct |
 
 **Nothing on this site invents a client, employer, award, testimonial, or
 years-of-experience figure.** Keep it that way: an empty rack slot is better
@@ -57,7 +55,7 @@ Each part must be exported to a web format first:
 | **GLB / glTF** | Fusion 360 exports directly; SolidWorks needs a plugin or a Blender round-trip | Carries its own materials and colours |
 
 The loader picks the path from the file extension. Both are already exercised:
-`PL-0206` ships as GLB, the rest as STL.
+`WH-0784` ships as GLB. Both paths are supported; see the export notes above.
 
 ### Export settings that matter
 
@@ -122,7 +120,7 @@ cannot find one.
 5. Delete one `coupon--ghost` block, or leave them — they are the deliberate
    "slot reserved" state.
 
-If you would rather keep the seven project pages consistent, edit the `PROJECTS`
+If you would rather keep the project pages consistent, edit the `PROJECTS`
 array in `tools/make-projects.mjs` and run `node tools/make-projects.mjs`. That
 script **writes** the static pages; it is never needed to serve them.
 
@@ -166,7 +164,7 @@ python3 -m http.server 8000
 ## How it is put together
 
 ```
-index.html              the rack — hero specimen, seven coupons, capability, title block
+index.html              the rack — hero specimen, one coupon, capability, title block
 projects/<part-no>/     one page per coupon; plain static HTML
 assets/css/site.css     the whole design system, one file, commented by section
 assets/js/finishes.js   the dye rack: chip colour, text ink, PBR values, spec rows
@@ -195,12 +193,11 @@ tools/                  generators for the placeholder geometry, posters, and pr
 - **Motion respects `prefers-reduced-motion`**: auto-rotate and the coupon
   seating animation both switch off.
 
-### Deleting the placeholder tooling
+### Placeholder tooling
 
-Once real work is in, these can go:
+`tools/make-specimens.mjs`, which generated the stand-in geometry, has been
+deleted now that a real export is in. `node_modules/` existed only for that
+script and can be removed locally; it is gitignored either way.
 
-```
-tools/make-specimens.mjs   generated the stand-in geometry
-tools/poster.html          the poster rig (keep if you want to regenerate posters)
-node_modules/              only used by tools/make-specimens.mjs
-```
+`tools/make-posters.mjs` and `tools/poster.html` are still needed — they render
+the poster plates for each new part.

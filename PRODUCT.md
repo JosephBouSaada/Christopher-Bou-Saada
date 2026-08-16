@@ -112,8 +112,10 @@ assembly relationships for themselves.
 - **LinkedIn**: `linkedin.com/in/chris-bou-saada`, the only off-site link.
 - **Declined, not pending**: GrabCAD and a linked résumé. Both rows were removed
   rather than left as placeholders.
-- The project set: titles, count, context, constraints solved, materials, and
-  outcomes.
+- The rest of the project set: titles, count, context, constraints solved,
+  materials, and outcomes. One real export (WH-0784) is in; the stand-in
+  geometry that stood for the others has been removed rather than left to
+  imply work that does not exist.
 - Whether any work is under NDA or otherwise cannot be shown.
 
 ## Brand Commitments
