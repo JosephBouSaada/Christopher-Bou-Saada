@@ -18,9 +18,6 @@ below is real. Replace it, then delete the strip.
 | Where | What is fake | Replace with |
 |---|---|---|
 | `index.html` nameplate | "Mechanical design" | His actual discipline / title |
-| Footer, all pages | `hello@example.com` | Real email |
-| Footer, all pages | `City, Country` | Real location |
-| Footer, all pages | LinkedIn / GrabCAD / Résumé links (`href="#contact"`) | Real URLs, or delete the rows |
 | Footer, `index.html` | "Available for mechanical design work and full-time engineering roles." | Confirm this is true |
 | `index.html` → Capability | CAD packages, processes, materials, finishes | What he actually uses |
 | `index.html` → Capability | "How a part gets issued" (5 stages) | His real working method, or delete the table |

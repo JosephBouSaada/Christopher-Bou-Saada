@@ -493,9 +493,9 @@ ${revrows(p.revisions)}
     </div>
     <div class="titleblock__cell">
       <span class="k">Email</span>
-      <span class="v"><a href="mailto:hello@example.com">hello@example.com</a></span>
+      <span class="v"><a href="mailto:ChristopherBouSaada@gmail.com">ChristopherBouSaada@gmail.com</a></span>
       <span class="k">Location</span>
-      <span class="v" style="font-size:0.875rem">City, Country</span>
+      <span class="v" style="font-size:0.875rem">Salem, NH</span>
     </div>
     <div class="titleblock__cell">
       <span class="k">Drawing</span>
