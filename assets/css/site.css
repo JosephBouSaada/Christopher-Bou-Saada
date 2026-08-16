@@ -597,7 +597,11 @@ a:hover { text-decoration-thickness: 2px; }
 }
 .viewer.is-live .viewer__poster { opacity: 0; }
 
-.viewer__canvas { width: 100%; height: 100%; touch-action: none; cursor: grab; }
+/* The poster is absolutely positioned; as a static element the canvas would
+   paint — and hit-test — beneath it, and fading the poster to opacity 0 does
+   not take it out of hit testing. Positioning the canvas puts it above the
+   poster by DOM order so drags reach OrbitControls. */
+.viewer__canvas { position: relative; width: 100%; height: 100%; touch-action: none; cursor: grab; }
 .viewer__canvas:active { cursor: grabbing; }
 
 .viewer__readout {
@@ -1135,6 +1139,13 @@ a:hover { text-decoration-thickness: 2px; }
   .seat {
     opacity: 0;
     transform: translateY(14px) scale(0.985);
+  }
+  /* Only JavaScript adds .is-seated, so without it every coupon in the rack
+     would stay at opacity 0 and the work register would render as blank
+     space. The content and its links must survive with scripting off. */
+  .no-js .seat {
+    opacity: 1;
+    transform: none;
   }
   .seat.is-seated {
     opacity: 1;

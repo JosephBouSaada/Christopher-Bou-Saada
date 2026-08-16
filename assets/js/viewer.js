@@ -301,7 +301,11 @@ export function mountViewer(root) {
 
   /* ---- loop ------------------------------------------------------------ */
   let running = false;
-  let visible = true;
+  /* Two independent reasons to stop drawing, tracked separately. Folding them
+     into one flag latches it: once a tab switch clears it, the return event
+     recomputes from the already-false value and the loop never draws again. */
+  let inView = true;
+  let pageVisible = true;
   let raf = 0;
 
   function resize() {
@@ -323,7 +327,7 @@ export function mountViewer(root) {
 
   function tick() {
     raf = requestAnimationFrame(tick);
-    if (!visible) return;
+    if (!inView || !pageVisible) return;
     const moved = controls.update();
     if (moved || needsRender) {
       needsRender = false;
@@ -342,13 +346,13 @@ export function mountViewer(root) {
   ro.observe(root);
 
   const io = new IntersectionObserver((entries) => {
-    visible = entries[0].isIntersecting;
-    if (visible) invalidate();
+    inView = entries[0].isIntersecting;
+    if (inView) invalidate();
   }, { rootMargin: '120px' });
   io.observe(root);
 
   document.addEventListener('visibilitychange', () => {
-    visible = !document.hidden && visible;
+    pageVisible = !document.hidden;
     invalidate();
   });
 
