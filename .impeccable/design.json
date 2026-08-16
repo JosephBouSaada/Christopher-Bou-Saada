@@ -1,0 +1,698 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-16T04:37:05.672Z",
+  "title": "Design System: Christopher Vale — Mechanical Design & CAD",
+  "extensions": {
+    "colorMeta": {
+      "void": {
+        "role": "neutral",
+        "displayName": "Hardcoat Void",
+        "canonical": "oklch(16.8% 0.003 248)",
+        "tonalRamp": [
+          "oklch(15% 0.002 248)",
+          "oklch(26.4% 0.002 248)",
+          "oklch(37.9% 0.002 248)",
+          "oklch(49.3% 0.003 248)",
+          "oklch(60.7% 0.003 248)",
+          "oklch(72.1% 0.002 248)",
+          "oklch(83.6% 0.002 248)",
+          "oklch(95% 0.002 248)"
+        ]
+      },
+      "plate": {
+        "role": "neutral",
+        "displayName": "Hardcoat Plate",
+        "canonical": "oklch(22.1% 0.007 258.4)",
+        "tonalRamp": [
+          "oklch(15% 0.004 258.4)",
+          "oklch(26.4% 0.005 258.4)",
+          "oklch(37.9% 0.006 258.4)",
+          "oklch(49.3% 0.007 258.4)",
+          "oklch(60.7% 0.007 258.4)",
+          "oklch(72.1% 0.006 258.4)",
+          "oklch(83.6% 0.005 258.4)",
+          "oklch(95% 0.004 258.4)"
+        ]
+      },
+      "plate-2": {
+        "role": "neutral",
+        "displayName": "Plate Two",
+        "canonical": "oklch(24.2% 0.007 248.1)",
+        "tonalRamp": [
+          "oklch(15% 0.005 248.1)",
+          "oklch(26.4% 0.006 248.1)",
+          "oklch(37.9% 0.007 248.1)",
+          "oklch(49.3% 0.007 248.1)",
+          "oklch(60.7% 0.007 248.1)",
+          "oklch(72.1% 0.007 248.1)",
+          "oklch(83.6% 0.006 248.1)",
+          "oklch(95% 0.005 248.1)"
+        ]
+      },
+      "plate-3": {
+        "role": "neutral",
+        "displayName": "Plate Three",
+        "canonical": "oklch(27.4% 0.009 248.2)",
+        "tonalRamp": [
+          "oklch(15% 0.006 248.2)",
+          "oklch(26.4% 0.008 248.2)",
+          "oklch(37.9% 0.009 248.2)",
+          "oklch(49.3% 0.009 248.2)",
+          "oklch(60.7% 0.009 248.2)",
+          "oklch(72.1% 0.009 248.2)",
+          "oklch(83.6% 0.008 248.2)",
+          "oklch(95% 0.006 248.2)"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Rule",
+        "canonical": "oklch(33.4% 0.01 242)",
+        "tonalRamp": [
+          "oklch(15% 0.006 242)",
+          "oklch(26.4% 0.008 242)",
+          "oklch(37.9% 0.009 242)",
+          "oklch(49.3% 0.01 242)",
+          "oklch(60.7% 0.01 242)",
+          "oklch(72.1% 0.009 242)",
+          "oklch(83.6% 0.008 242)",
+          "oklch(95% 0.006 242)"
+        ]
+      },
+      "rule-bright": {
+        "role": "neutral",
+        "displayName": "Rule Bright",
+        "canonical": "oklch(40.9% 0.011 243.1)",
+        "tonalRamp": [
+          "oklch(15% 0.007 243.1)",
+          "oklch(26.4% 0.009 243.1)",
+          "oklch(37.9% 0.011 243.1)",
+          "oklch(49.3% 0.011 243.1)",
+          "oklch(60.7% 0.011 243.1)",
+          "oklch(72.1% 0.011 243.1)",
+          "oklch(83.6% 0.009 243.1)",
+          "oklch(95% 0.007 243.1)"
+        ]
+      },
+      "alu": {
+        "role": "neutral",
+        "displayName": "Bead-Blast Aluminium",
+        "canonical": "oklch(88.2% 0.007 233.7)",
+        "tonalRamp": [
+          "oklch(15% 0.004 233.7)",
+          "oklch(26.4% 0.006 233.7)",
+          "oklch(37.9% 0.006 233.7)",
+          "oklch(49.3% 0.007 233.7)",
+          "oklch(60.7% 0.007 233.7)",
+          "oklch(72.1% 0.006 233.7)",
+          "oklch(83.6% 0.006 233.7)",
+          "oklch(95% 0.004 233.7)"
+        ]
+      },
+      "alu-dim": {
+        "role": "neutral",
+        "displayName": "Aluminium Dim",
+        "canonical": "oklch(68.5% 0.01 232.4)",
+        "tonalRamp": [
+          "oklch(15% 0.006 232.4)",
+          "oklch(26.4% 0.008 232.4)",
+          "oklch(37.9% 0.009 232.4)",
+          "oklch(49.3% 0.01 232.4)",
+          "oklch(60.7% 0.01 232.4)",
+          "oklch(72.1% 0.009 232.4)",
+          "oklch(83.6% 0.008 232.4)",
+          "oklch(95% 0.006 232.4)"
+        ]
+      },
+      "alu-faint": {
+        "role": "neutral",
+        "displayName": "Aluminium Faint",
+        "canonical": "oklch(63.2% 0.01 232.5)",
+        "tonalRamp": [
+          "oklch(15% 0.007 232.5)",
+          "oklch(26.4% 0.008 232.5)",
+          "oklch(37.9% 0.01 232.5)",
+          "oklch(49.3% 0.01 232.5)",
+          "oklch(60.7% 0.01 232.5)",
+          "oklch(72.1% 0.01 232.5)",
+          "oklch(83.6% 0.008 232.5)",
+          "oklch(95% 0.007 232.5)"
+        ]
+      },
+      "dye-natural": {
+        "role": "primary",
+        "displayName": "Bead Blast",
+        "canonical": "oklch(83.4% 0.009 225.1)",
+        "tonalRamp": [
+          "oklch(15% 0.006 225.1)",
+          "oklch(26.4% 0.007 225.1)",
+          "oklch(37.9% 0.008 225.1)",
+          "oklch(49.3% 0.009 225.1)",
+          "oklch(60.7% 0.009 225.1)",
+          "oklch(72.1% 0.008 225.1)",
+          "oklch(83.6% 0.007 225.1)",
+          "oklch(95% 0.006 225.1)"
+        ]
+      },
+      "ink-natural": {
+        "role": "primary",
+        "displayName": "Bead Blast Ink",
+        "canonical": "oklch(88.2% 0.007 233.7)",
+        "tonalRamp": [
+          "oklch(15% 0.004 233.7)",
+          "oklch(26.4% 0.006 233.7)",
+          "oklch(37.9% 0.006 233.7)",
+          "oklch(49.3% 0.007 233.7)",
+          "oklch(60.7% 0.007 233.7)",
+          "oklch(72.1% 0.006 233.7)",
+          "oklch(83.6% 0.006 233.7)",
+          "oklch(95% 0.004 233.7)"
+        ]
+      },
+      "dye-clear": {
+        "role": "primary",
+        "displayName": "Clear Anodize",
+        "canonical": "oklch(74.7% 0.024 233.5)",
+        "tonalRamp": [
+          "oklch(15% 0.015 233.5)",
+          "oklch(26.4% 0.02 233.5)",
+          "oklch(37.9% 0.022 233.5)",
+          "oklch(49.3% 0.024 233.5)",
+          "oklch(60.7% 0.024 233.5)",
+          "oklch(72.1% 0.022 233.5)",
+          "oklch(83.6% 0.02 233.5)",
+          "oklch(95% 0.015 233.5)"
+        ]
+      },
+      "ink-clear": {
+        "role": "primary",
+        "displayName": "Clear Anodize Ink",
+        "canonical": "oklch(83.5% 0.021 229.1)",
+        "tonalRamp": [
+          "oklch(15% 0.013 229.1)",
+          "oklch(26.4% 0.017 229.1)",
+          "oklch(37.9% 0.019 229.1)",
+          "oklch(49.3% 0.021 229.1)",
+          "oklch(60.7% 0.021 229.1)",
+          "oklch(72.1% 0.019 229.1)",
+          "oklch(83.6% 0.017 229.1)",
+          "oklch(95% 0.013 229.1)"
+        ]
+      },
+      "dye-black": {
+        "role": "primary",
+        "displayName": "Hardcoat Black",
+        "canonical": "oklch(29.5% 0.007 248.1)",
+        "tonalRamp": [
+          "oklch(15% 0.004 248.1)",
+          "oklch(26.4% 0.006 248.1)",
+          "oklch(37.9% 0.006 248.1)",
+          "oklch(49.3% 0.007 248.1)",
+          "oklch(60.7% 0.007 248.1)",
+          "oklch(72.1% 0.006 248.1)",
+          "oklch(83.6% 0.006 248.1)",
+          "oklch(95% 0.004 248.1)"
+        ]
+      },
+      "ink-black": {
+        "role": "primary",
+        "displayName": "Hardcoat Black Ink",
+        "canonical": "oklch(80.1% 0.009 236.6)",
+        "tonalRamp": [
+          "oklch(15% 0.006 236.6)",
+          "oklch(26.4% 0.007 236.6)",
+          "oklch(37.9% 0.008 236.6)",
+          "oklch(49.3% 0.009 236.6)",
+          "oklch(60.7% 0.009 236.6)",
+          "oklch(72.1% 0.008 236.6)",
+          "oklch(83.6% 0.007 236.6)",
+          "oklch(95% 0.006 236.6)"
+        ]
+      },
+      "dye-gold": {
+        "role": "primary",
+        "displayName": "Gold Dye",
+        "canonical": "oklch(73% 0.14 76.3)",
+        "tonalRamp": [
+          "oklch(15% 0.09 76.3)",
+          "oklch(26.4% 0.115 76.3)",
+          "oklch(37.9% 0.131 76.3)",
+          "oklch(49.3% 0.139 76.3)",
+          "oklch(60.7% 0.139 76.3)",
+          "oklch(72.1% 0.131 76.3)",
+          "oklch(83.6% 0.115 76.3)",
+          "oklch(95% 0.09 76.3)"
+        ]
+      },
+      "ink-gold": {
+        "role": "primary",
+        "displayName": "Gold Dye Ink",
+        "canonical": "oklch(81.7% 0.132 79.9)",
+        "tonalRamp": [
+          "oklch(15% 0.085 79.9)",
+          "oklch(26.4% 0.108 79.9)",
+          "oklch(37.9% 0.124 79.9)",
+          "oklch(49.3% 0.131 79.9)",
+          "oklch(60.7% 0.131 79.9)",
+          "oklch(72.1% 0.124 79.9)",
+          "oklch(83.6% 0.108 79.9)",
+          "oklch(95% 0.085 79.9)"
+        ]
+      },
+      "dye-red": {
+        "role": "primary",
+        "displayName": "Red Dye",
+        "canonical": "oklch(56.2% 0.181 30.4)",
+        "tonalRamp": [
+          "oklch(15% 0.116 30.4)",
+          "oklch(26.4% 0.148 30.4)",
+          "oklch(37.9% 0.169 30.4)",
+          "oklch(49.3% 0.179 30.4)",
+          "oklch(60.7% 0.179 30.4)",
+          "oklch(72.1% 0.169 30.4)",
+          "oklch(83.6% 0.148 30.4)",
+          "oklch(95% 0.116 30.4)"
+        ]
+      },
+      "ink-red": {
+        "role": "primary",
+        "displayName": "Red Dye Ink",
+        "canonical": "oklch(69.7% 0.164 30.6)",
+        "tonalRamp": [
+          "oklch(15% 0.106 30.6)",
+          "oklch(26.4% 0.134 30.6)",
+          "oklch(37.9% 0.153 30.6)",
+          "oklch(49.3% 0.163 30.6)",
+          "oklch(60.7% 0.163 30.6)",
+          "oklch(72.1% 0.153 30.6)",
+          "oklch(83.6% 0.134 30.6)",
+          "oklch(95% 0.106 30.6)"
+        ]
+      },
+      "dye-blue": {
+        "role": "primary",
+        "displayName": "Blue Dye",
+        "canonical": "oklch(58% 0.163 256.4)",
+        "tonalRamp": [
+          "oklch(15% 0.105 256.4)",
+          "oklch(26.4% 0.133 256.4)",
+          "oklch(37.9% 0.152 256.4)",
+          "oklch(49.3% 0.162 256.4)",
+          "oklch(60.7% 0.162 256.4)",
+          "oklch(72.1% 0.152 256.4)",
+          "oklch(83.6% 0.133 256.4)",
+          "oklch(95% 0.105 256.4)"
+        ]
+      },
+      "ink-blue": {
+        "role": "primary",
+        "displayName": "Blue Dye Ink",
+        "canonical": "oklch(72.9% 0.126 255)",
+        "tonalRamp": [
+          "oklch(15% 0.081 255)",
+          "oklch(26.4% 0.103 255)",
+          "oklch(37.9% 0.118 255)",
+          "oklch(49.3% 0.125 255)",
+          "oklch(60.7% 0.125 255)",
+          "oklch(72.1% 0.118 255)",
+          "oklch(83.6% 0.103 255)",
+          "oklch(95% 0.081 255)"
+        ]
+      },
+      "dye-violet": {
+        "role": "primary",
+        "displayName": "Violet Dye",
+        "canonical": "oklch(56.8% 0.195 299.7)",
+        "tonalRamp": [
+          "oklch(15% 0.125 299.7)",
+          "oklch(26.4% 0.159 299.7)",
+          "oklch(37.9% 0.182 299.7)",
+          "oklch(49.3% 0.193 299.7)",
+          "oklch(60.7% 0.193 299.7)",
+          "oklch(72.1% 0.182 299.7)",
+          "oklch(83.6% 0.159 299.7)",
+          "oklch(95% 0.125 299.7)"
+        ]
+      },
+      "ink-violet": {
+        "role": "primary",
+        "displayName": "Violet Dye Ink",
+        "canonical": "oklch(72.7% 0.139 300.5)",
+        "tonalRamp": [
+          "oklch(15% 0.089 300.5)",
+          "oklch(26.4% 0.113 300.5)",
+          "oklch(37.9% 0.13 300.5)",
+          "oklch(49.3% 0.138 300.5)",
+          "oklch(60.7% 0.138 300.5)",
+          "oklch(72.1% 0.13 300.5)",
+          "oklch(83.6% 0.113 300.5)",
+          "oklch(95% 0.089 300.5)"
+        ]
+      },
+      "dye-olive": {
+        "role": "primary",
+        "displayName": "Olive Dye",
+        "canonical": "oklch(63.4% 0.134 129.9)",
+        "tonalRamp": [
+          "oklch(15% 0.087 129.9)",
+          "oklch(26.4% 0.11 129.9)",
+          "oklch(37.9% 0.126 129.9)",
+          "oklch(49.3% 0.133 129.9)",
+          "oklch(60.7% 0.133 129.9)",
+          "oklch(72.1% 0.126 129.9)",
+          "oklch(83.6% 0.11 129.9)",
+          "oklch(95% 0.087 129.9)"
+        ]
+      },
+      "ink-olive": {
+        "role": "primary",
+        "displayName": "Olive Dye Ink",
+        "canonical": "oklch(80.4% 0.136 126.6)",
+        "tonalRamp": [
+          "oklch(15% 0.088 126.6)",
+          "oklch(26.4% 0.112 126.6)",
+          "oklch(37.9% 0.127 126.6)",
+          "oklch(49.3% 0.135 126.6)",
+          "oklch(60.7% 0.135 126.6)",
+          "oklch(72.1% 0.127 126.6)",
+          "oklch(83.6% 0.112 126.6)",
+          "oklch(95% 0.088 126.6)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page-owning statements: hero headline, project title, title-block issuer. Archivo 800 at wdth 112, uppercase, capped ~15-18ch so it always stacks."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section heads inside a band. Same treatment as Display, one size step down."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "The part name in a register row. Sentence case — it is a name, not a stamp."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "The single sentence under a display heading. Dim aluminium, max 46ch, pretty wrap. One per heading, never two."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running prose, max 68ch. Archivo at wdth 100."
+      },
+      "label": {
+        "displayName": "Label (stamp)",
+        "purpose": "Azeret Mono uppercase at 0.14em. Spec keys and values, nav links, chip names, buttons, breadcrumbs, viewer readouts."
+      },
+      "label-micro": {
+        "displayName": "Label Micro",
+        "purpose": "Azeret Mono at 0.6875rem, tracked 0.16-0.18em. Column heads, title-block keys, figure captions, finish codes."
+      }
+    },
+    "shadows": [
+      {
+        "name": "seat",
+        "value": "0 1px 2px rgb(0 0 0 / 0.5), 0 7px 14px -8px rgb(0 0 0 / 0.65)",
+        "purpose": "An object at rest in its tray: the specimen bay, a coupon plate."
+      },
+      {
+        "name": "lift",
+        "value": "0 2px 4px rgb(0 0 0 / 0.55), 0 14px 22px -10px rgb(0 0 0 / 0.75)",
+        "purpose": "The same object picked up. Reserved; used sparingly."
+      },
+      {
+        "name": "edge-thickness",
+        "value": "inset 0 1px 0 rgb(255 255 255 / 0.05), inset 0 -2px 3px rgb(0 0 0 / 0.55), 0 1px 2px rgb(0 0 0 / 0.5)",
+        "purpose": "A bevel, not a shadow. Gives a plate real milled edge thickness: top edge catches light, bottom edge sits in its own shade."
+      },
+      {
+        "name": "chip-seat",
+        "value": "inset 0 0 0 1px rgb(0 0 0 / 0.5), 0 1px 2px rgb(0 0 0 / 0.5)",
+        "purpose": "A dye chip lying in the rack: dark keyline plus a shallow contact shadow."
+      },
+      {
+        "name": "chip-selected-ring",
+        "value": "inset 0 0 0 1px rgb(0 0 0 / 0.5), 0 0 0 2px var(--plate), 0 0 0 3px var(--chip)",
+        "purpose": "The selected dye chip: a gap ring in the plate colour, then the chip's own colour."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Default easing. Fast departure, long settle — colour changes, fades, slides."
+      },
+      {
+        "name": "ease-seat",
+        "value": "cubic-bezier(0.22, 1.1, 0.36, 1)",
+        "purpose": "Slight overshoot. Only for things that physically seat: coupons arriving, chips lifting, the row seat channel."
+      },
+      {
+        "name": "dur-state",
+        "value": "0.16s",
+        "purpose": "Hover and focus colour feedback."
+      },
+      {
+        "name": "dur-physical",
+        "value": "0.24s - 0.3s",
+        "purpose": "Physical movement: chip lift, swatch scale, seat channel."
+      },
+      {
+        "name": "dur-finish",
+        "value": "0.4s",
+        "purpose": "The finish retint. Every dye-bound property shares this duration so the whole page changes as one deliberate act."
+      },
+      {
+        "name": "dur-poster",
+        "value": "0.7s",
+        "purpose": "Render poster dissolving as the live mesh takes over."
+      },
+      {
+        "name": "seat-arrival",
+        "value": "opacity 0.5s var(--ease-out), transform 0.62s var(--ease-seat)",
+        "purpose": "The system's one authored moment: register rows dropping into the rack with a staggered --seat-delay."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "register-narrow",
+        "value": "1220px"
+      },
+      {
+        "name": "hero-narrow",
+        "value": "1180px"
+      },
+      {
+        "name": "sheet-stack",
+        "value": "960px"
+      },
+      {
+        "name": "register-stack",
+        "value": "940px"
+      },
+      {
+        "name": "hero-stack",
+        "value": "900px"
+      },
+      {
+        "name": "titleblock-2col",
+        "value": "820px"
+      },
+      {
+        "name": "strip-terse",
+        "value": "760px"
+      },
+      {
+        "name": "nameplate-terse",
+        "value": "720px"
+      },
+      {
+        "name": "compact",
+        "value": "560px"
+      },
+      {
+        "name": "titleblock-1col",
+        "value": "520px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "The committing action. Filled with the live finish, so it re-finishes with the page.",
+      "html": "<a class=\"ds-btn\" href=\"#contact\">See the work</a>",
+      "css": ".ds-btn { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border: 1px solid var(--dye, #d99a2b); background: var(--dye, #d99a2b); color: var(--void, #0e0f10); font-family: 'Azeret Mono', ui-monospace, Menlo, monospace; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; border-radius: 0; cursor: pointer; transition: background-color 0.4s cubic-bezier(0.16,1,0.3,1), border-color 0.4s cubic-bezier(0.16,1,0.3,1), filter 0.16s, transform 0.16s; } .ds-btn:hover { filter: brightness(1.14); transform: translateY(-1px); } .ds-btn:active { transform: translateY(0); } .ds-btn:focus-visible { outline: 2px solid var(--ink, #f0b955); outline-offset: 2px; }"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "The secondary action. Shows the finish only on hover, through --ink.",
+      "html": "<a class=\"ds-btn-ghost\" href=\"#contact\">Contact</a>",
+      "css": ".ds-btn-ghost { display: inline-flex; align-items: center; gap: 8px; padding: 12px 24px; border: 1px solid var(--rule-bright, #454b50); background: transparent; color: var(--alu, #d4d9dc); font-family: 'Azeret Mono', ui-monospace, Menlo, monospace; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; text-decoration: none; border-radius: 0; cursor: pointer; transition: color 0.16s, border-color 0.16s, transform 0.16s; } .ds-btn-ghost:hover { color: var(--ink, #f0b955); border-color: var(--ink, #f0b955); transform: translateY(-1px); } .ds-btn-ghost:focus-visible { outline: 2px solid var(--ink, #f0b955); outline-offset: 2px; }"
+    },
+    {
+      "name": "Dye Chip",
+      "kind": "chip",
+      "refersTo": "chip",
+      "description": "The signature control. A machined coupon seen edge-on; selecting it re-materials the 3D mesh and retints the entire page.",
+      "html": "<div class=\"ds-rack\"><button type=\"button\" class=\"ds-chip\" style=\"--chip:#d99a2b\" aria-pressed=\"true\"><span>Gold dye<small>AN-2G</small></span></button><button type=\"button\" class=\"ds-chip\" style=\"--chip:#2f79d8\" aria-pressed=\"false\"><span>Blue dye<small>AN-2B</small></span></button></div>",
+      "css": ".ds-rack { display: flex; flex-direction: column; border-top: 1px solid var(--rule, #32373b); max-width: 220px; } .ds-chip { position: relative; display: grid; grid-template-columns: 26px 1fr; align-items: center; gap: 16px; width: 100%; padding: 11px 8px; border: 0; border-bottom: 1px solid var(--rule, #32373b); border-radius: 0; background: transparent; color: var(--alu-dim, #949b9f); font-family: 'Azeret Mono', ui-monospace, Menlo, monospace; font-size: 0.75rem; letter-spacing: 0.06em; text-transform: uppercase; text-align: left; cursor: pointer; transition: color 0.16s, background-color 0.16s; } .ds-chip::before { content: ''; width: 26px; height: 26px; background: var(--chip); background-image: linear-gradient(146deg, rgb(255 255 255 / 0.2) 0%, rgb(255 255 255 / 0.03) 38%, rgb(0 0 0 / 0.32) 100%), repeating-linear-gradient(146deg, rgb(255 255 255 / 0.05) 0 1px, transparent 1px 3px); box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.5), 0 1px 2px rgb(0 0 0 / 0.5); transition: transform 0.24s cubic-bezier(0.22,1.1,0.36,1); } .ds-chip:hover { color: var(--alu, #d4d9dc); background: rgb(255 255 255 / 0.028); } .ds-chip:hover::before { transform: translateX(-2px) scale(1.06); } .ds-chip[aria-pressed='true'] { color: var(--alu, #d4d9dc); background: rgb(255 255 255 / 0.05); } .ds-chip[aria-pressed='true']::before { box-shadow: inset 0 0 0 1px rgb(0 0 0 / 0.5), 0 0 0 2px var(--plate, #191b1e), 0 0 0 3px var(--chip); } .ds-chip small { display: block; font-size: 0.6875rem; letter-spacing: 0.1em; color: var(--alu-faint, #848b8f); } .ds-chip:focus-visible { outline: 2px solid var(--ink, #f0b955); outline-offset: 2px; }"
+    },
+    {
+      "name": "Register Row",
+      "kind": "card",
+      "refersTo": "register-row",
+      "description": "Replaces the card. A hairline-ruled drawer row read across; hover grows a seat channel in the row's finish colour.",
+      "html": "<a class=\"ds-row\" href=\"#\"><div class=\"ds-row-plate\"><span class=\"ds-row-live\">Live</span></div><div class=\"ds-row-id\"><b>Motor mount face plate</b><i>A NEMA 34 stepper had to hang off a gantry beam with no spacer stack.</i></div><div class=\"ds-row-spec\"><span class=\"pn\">MB-0142</span><span>6061-T6</span><span>3-axis mill</span><span class=\"mass\">412 g</span></div></a>",
+      "css": ".ds-row { position: relative; display: grid; grid-template-columns: 176px minmax(0,1fr) 300px; align-items: center; gap: 32px; padding: 24px; border-bottom: 1px solid var(--rule, #32373b); border-top: 1px solid var(--rule-bright, #454b50); border-radius: 0; text-decoration: none; color: inherit; transition: background-color 0.24s cubic-bezier(0.16,1,0.3,1); } .ds-row::before { content: ''; position: absolute; left: 0; top: 0; bottom: -1px; width: 3px; background: var(--dye, #d99a2b); transform: scaleY(0); transform-origin: center; transition: transform 0.28s cubic-bezier(0.22,1.1,0.36,1); } .ds-row:hover, .ds-row:focus-visible { background: rgb(255 255 255 / 0.028); } .ds-row:hover::before, .ds-row:focus-visible::before { transform: scaleY(1); } .ds-row-plate { position: relative; aspect-ratio: 4 / 3; background: radial-gradient(90% 74% at 50% 36%, #23272b 0%, #131517 78%); border: 1px solid var(--rule, #32373b); box-shadow: inset 0 1px 0 rgb(255 255 255 / 0.05), inset 0 -2px 3px rgb(0 0 0 / 0.55), 0 1px 2px rgb(0 0 0 / 0.5); overflow: hidden; } .ds-row-live { position: absolute; left: 5px; bottom: 5px; display: flex; align-items: center; gap: 4px; padding: 1px 5px; background: rgb(14 15 16 / 0.8); border: 1px solid var(--rule, #32373b); font-family: 'Azeret Mono', ui-monospace, Menlo, monospace; font-size: 0.6875rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--alu-dim, #949b9f); } .ds-row-live::before { content: ''; width: 5px; height: 5px; border-radius: 50%; background: var(--dye, #d99a2b); } .ds-row-id { display: grid; gap: 4px; min-width: 0; } .ds-row-id b { font-family: Archivo, system-ui, sans-serif; font-size: 1.125rem; font-weight: 700; font-variation-settings: 'wdth' 104; letter-spacing: -0.014em; line-height: 1.2; color: var(--alu, #d4d9dc); } .ds-row-id i { font-style: normal; font-family: Archivo, system-ui, sans-serif; font-size: 0.9375rem; line-height: 1.5; color: var(--alu-dim, #949b9f); } .ds-row-spec { display: grid; grid-template-columns: 92px 90px 76px; gap: 8px; font-family: 'Azeret Mono', ui-monospace, Menlo, monospace; font-size: 0.75rem; letter-spacing: 0.04em; font-variant-numeric: tabular-nums; text-transform: uppercase; color: var(--alu-dim, #949b9f); } .ds-row-spec .pn { color: var(--alu, #d4d9dc); letter-spacing: 0.08em; } .ds-row-spec .mass { text-align: right; }"
+    },
+    {
+      "name": "Ghost Row (unissued slot)",
+      "kind": "card",
+      "refersTo": "register-row",
+      "description": "Designed absence. An empty drawer position, part-numbered and dashed, with no hover response.",
+      "html": "<div class=\"ds-row-ghost\"><div class=\"ds-ghost-plate\"><span>07</span></div><div class=\"ds-row-id\"><b>Slot open</b><i>Awaiting Christopher's next issue.</i></div></div>",
+      "css": ".ds-row-ghost { display: grid; grid-template-columns: 176px minmax(0,1fr); align-items: center; gap: 32px; padding: 24px; border-bottom: 1px solid var(--rule, #32373b); border-top: 1px solid var(--rule, #32373b); border-radius: 0; cursor: default; } .ds-ghost-plate { aspect-ratio: 4 / 3; display: grid; place-items: center; background: none; border: 1px dashed var(--rule, #32373b); box-shadow: none; } .ds-ghost-plate span { font-family: 'Azeret Mono', ui-monospace, Menlo, monospace; font-size: 1.375rem; color: var(--alu-faint, #848b8f); font-variant-numeric: tabular-nums; } .ds-row-ghost .ds-row-id b { font-family: Archivo, system-ui, sans-serif; font-size: 1.125rem; font-weight: 500; line-height: 1.2; color: var(--alu-dim, #949b9f); } .ds-row-ghost .ds-row-id i { font-style: normal; font-family: Archivo, system-ui, sans-serif; font-size: 0.9375rem; line-height: 1.5; color: var(--alu-faint, #848b8f); }"
+    },
+    {
+      "name": "Spec Stamp",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "The stamped specification block. Mono both sides, values right-aligned and tabular; finish-bound values carry --ink.",
+      "html": "<div class=\"ds-stamp\"><p class=\"ds-stamp-head\">Specimen under test</p><dl><div><dt>Part no.</dt><dd>MB-0142</dd></div><div><dt>Material</dt><dd>6061-T6</dd></div><div><dt>Finish</dt><dd class=\"live\">AN-2G</dd></div><div><dt>Mass</dt><dd>412 g</dd></div></dl></div>",
+      "css": ".ds-stamp { max-width: 244px; font-family: 'Azeret Mono', ui-monospace, Menlo, monospace; } .ds-stamp-head { margin: 0 0 16px; font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--alu-faint, #848b8f); } .ds-stamp dl { margin: 0; display: grid; grid-template-columns: 1fr; } .ds-stamp div { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; padding: 10px 16px 10px 0; border-bottom: 1px solid var(--rule, #32373b); } .ds-stamp div:first-child { border-top: 1px solid var(--rule, #32373b); } .ds-stamp dt { font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--alu-faint, #848b8f); } .ds-stamp dd { margin: 0; font-size: 0.75rem; font-weight: 500; color: var(--alu, #d4d9dc); font-variant-numeric: tabular-nums; text-align: right; } .ds-stamp dd.live { color: var(--ink, #f0b955); transition: color 0.4s cubic-bezier(0.16,1,0.3,1); }"
+    },
+    {
+      "name": "Nameplate Navigation",
+      "kind": "nav",
+      "refersTo": "nav-link",
+      "description": "The sticky header. Issuer mark with a finish-tinted underline; the contact path is the only filled element.",
+      "html": "<header class=\"ds-nameplate\"><a class=\"ds-mark\" href=\"#\"><b>Christopher Vale</b><em>Mechanical design</em></a><nav class=\"ds-nav\"><a href=\"#\">Work</a><a href=\"#\">Capability</a><a href=\"#\" class=\"is-primary\">Contact</a></nav></header>",
+      "css": ".ds-nameplate { display: flex; align-items: center; gap: 32px; height: 56px; padding-inline: 32px; background: color-mix(in srgb, var(--plate, #191b1e) 86%, transparent); backdrop-filter: blur(14px) saturate(1.2); border-bottom: 1px solid var(--rule, #32373b); } .ds-mark { display: flex; align-items: baseline; gap: 8px; text-decoration: none; color: var(--alu, #d4d9dc); font-family: Archivo, system-ui, sans-serif; font-weight: 700; font-variation-settings: 'wdth' 108; letter-spacing: 0.02em; text-transform: uppercase; font-size: 0.875rem; white-space: nowrap; } .ds-mark b { font-weight: 800; border-bottom: 2px solid var(--dye, #d99a2b); transition: border-color 0.4s cubic-bezier(0.16,1,0.3,1); } .ds-mark em { font-style: normal; font-family: 'Azeret Mono', ui-monospace, Menlo, monospace; font-size: 0.75rem; letter-spacing: 0.16em; color: var(--alu-faint, #848b8f); } .ds-nav { margin-left: auto; display: flex; align-items: center; gap: 8px; } .ds-nav a { font-family: 'Azeret Mono', ui-monospace, Menlo, monospace; font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--alu-dim, #949b9f); text-decoration: none; padding: 8px 16px; border: 1px solid transparent; border-radius: 0; transition: color 0.16s, border-color 0.16s, background-color 0.16s; } .ds-nav a:hover { color: var(--alu, #d4d9dc); border-color: var(--rule, #32373b); } .ds-nav a.is-primary { color: var(--void, #0e0f10); background: var(--dye, #d99a2b); border-color: var(--dye, #d99a2b); font-weight: 600; transition: background-color 0.4s cubic-bezier(0.16,1,0.3,1), border-color 0.4s cubic-bezier(0.16,1,0.3,1), filter 0.16s; } .ds-nav a.is-primary:hover { filter: brightness(1.14); } .ds-nav a:focus-visible { outline: 2px solid var(--ink, #f0b955); outline-offset: 2px; }"
+    },
+    {
+      "name": "Specification Table",
+      "kind": "custom",
+      "refersTo": null,
+      "description": "The revision table and spec sheets. Hairline-ruled, tabular, with the header edge marked in --rule-bright.",
+      "html": "<table class=\"ds-spectable\"><caption>Revision history</caption><thead><tr><th>Rev</th><th>Date</th><th>Change</th></tr></thead><tbody><tr><th class=\"rev\">C</th><td>2024-08-11</td><td>Bearing boss raised 2&nbsp;mm; spacer stack deleted.</td></tr><tr><th class=\"rev\">B</th><td>2024-07-02</td><td>Corner fillets increased to R4 for tool life.</td></tr></tbody></table>",
+      "css": ".ds-spectable { width: 100%; border-collapse: collapse; font-family: 'Azeret Mono', ui-monospace, Menlo, monospace; font-size: 0.8125rem; font-variant-numeric: tabular-nums; } .ds-spectable caption { text-align: left; padding-bottom: 16px; font-size: 0.75rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--alu-faint, #848b8f); } .ds-spectable th, .ds-spectable td { text-align: left; padding: 10px 16px; border-bottom: 1px solid var(--rule, #32373b); vertical-align: top; } .ds-spectable thead th { font-size: 0.75rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--alu-faint, #848b8f); font-weight: 500; border-bottom-color: var(--rule-bright, #454b50); } .ds-spectable tbody th { font-weight: 500; color: var(--alu-dim, #949b9f); width: 30%; } .ds-spectable td { color: var(--alu, #d4d9dc); } .ds-spectable tbody tr:hover td, .ds-spectable tbody tr:hover th { background: rgb(255 255 255 / 0.022); } .ds-spectable .rev { color: var(--ink, #f0b955); font-weight: 600; white-space: nowrap; }"
+    },
+    {
+      "name": "Issue Strip",
+      "kind": "custom",
+      "refersTo": "issue-strip",
+      "description": "The honest-state marker. The one place red appears, exempt from finish selection, designed to be deleted wholesale.",
+      "html": "<div class=\"ds-issue\"><b>Uncontrolled copy — not for issue</b><span>Every part, figure and contact detail below is placeholder content.</span></div>",
+      "css": ".ds-issue { background: color-mix(in srgb, #c93c2b 16%, #0e0f10); border-bottom: 1px solid color-mix(in srgb, #c93c2b 55%, transparent); color: #f2705c; font-family: 'Azeret Mono', ui-monospace, Menlo, monospace; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 9px 32px; display: flex; gap: 24px; align-items: baseline; justify-content: center; flex-wrap: wrap; text-align: center; } .ds-issue b { font-weight: 700; color: #ff8f7c; } .ds-issue span { color: color-mix(in srgb, #f2705c 78%, #d4d9dc); text-transform: none; letter-spacing: 0.01em; font-size: 0.8125rem; }"
+    },
+    {
+      "name": "Viewer Readout",
+      "kind": "custom",
+      "refersTo": "viewer-reset",
+      "description": "The specimen viewer's corner furniture: interaction verbs plus a reset control, over the live canvas.",
+      "html": "<div class=\"ds-readout\"><span>Drag to rotate</span><b>·</b><span>Scroll to zoom</span><button type=\"button\" class=\"ds-reset\">Reset</button></div>",
+      "css": ".ds-readout { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 8px 16px; font-family: 'Azeret Mono', ui-monospace, Menlo, monospace; font-size: 0.75rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--alu-faint, #848b8f); } .ds-readout b { font-weight: 500; color: var(--alu-dim, #949b9f); } .ds-reset { border: 1px solid var(--rule, #32373b); background: color-mix(in srgb, var(--plate, #191b1e) 80%, transparent); color: var(--alu-dim, #949b9f); font: inherit; letter-spacing: 0.12em; padding: 3px 8px; border-radius: 0; cursor: pointer; transition: color 0.16s, border-color 0.16s; } .ds-reset:hover { color: var(--alu, #d4d9dc); border-color: var(--rule-bright, #454b50); } .ds-reset:focus-visible { outline: 2px solid var(--ink, #f0b955); outline-offset: 2px; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Finish Sample Card",
+    "overview": "The site is an anodize dye-chip card. Not a portfolio that shows machined parts — a machined artifact in its own right. Every project is a sample coupon lying in a drawer on a bead-blast field, its specification stamped alongside it, the dye rack standing at the edge. The visitor does what anyone handed a sample card does: picks up a coupon, turns it, and holds a dye chip against it.\n\nThe system's governing idea is that the page has no fixed brand colour. STL files carry no material data, so the site art-directs the finish — and then hands that control to the visitor. Selecting a dye chip re-materials the live 3D mesh and retints every accent on the page in the same gesture, because the page's accent is the selected finish. The format's limitation became the signature interaction. Nothing else in the system is allowed to compete with it.\n\nEverything around that moment is drawing-office restraint: a warm-dark Type III hardcoat ground, bead-blast aluminium type, hairline rules instead of shadows, zero radius everywhere, and one 8px cell that governs every dimension on the page. Absence is drawn as deliberately as presence — an unissued drawer slot gets a dashed plate and a number, not a gap. The confirmed anti-reference is the dark portfolio grid of glowing rounded cards over static renders; this system refuses tiles, refuses glow, and refuses any picture standing in for geometry it could have shown live.",
+    "keyCharacteristics": [
+      "The accent colour is a runtime variable the visitor controls, never a constant.",
+      "Two voices only: Archivo states, Azeret Mono specifies.",
+      "Hairline rules carry structure; shadows only seat physical objects.",
+      "Zero corner radius, without exception, on every rectangular surface.",
+      "One 8px cell unit behind every dimension, gap, and grid track.",
+      "Absence is composed, labelled, and part-numbered — never empty."
+    ],
+    "rules": [
+      {
+        "name": "The Live Finish Rule",
+        "body": "There is no brand hue. Every accent — button fills, link colour, focus rings, selection highlight, the headline's emphasised words, the nameplate underline, the row seat channel, the progress bar — resolves through var(--dye) or var(--ink). A literal dye hex may appear in exactly two places: the :root token block, and a --chip inline value on a rack chip declaring which finish it is. Anywhere else it is a bug. This holds on surfaces that have no 3D viewer at all: the selected finish tints the whole site.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink Split Rule",
+        "body": "--dye is the physical colour — fills, swatches, edges, seat channels, 3D material. --ink is its lightened twin, the only one cleared for text and for hairlines that must be read. Never set type in --dye on the plate; never fill a swatch with --ink. Text placed on a --dye fill is always --void, never aluminium.",
+        "section": "colors"
+      },
+      {
+        "name": "The One Chromatic Voice Rule",
+        "body": "Red is reserved. It appears only on the UNCONTROLLED COPY issue strip and the placeholder-mesh note, where it means 'this is not real content yet'. It is never decoration, and it survives finish selection unchanged.",
+        "section": "colors"
+      },
+      {
+        "name": "The Two-Voice Rule",
+        "body": "Archivo states, Azeret Mono specifies. Anything a machinist would read off a drawing — a part number, a material, a tolerance, a mass, a finish code, a revision letter, a date — is mono. Anything addressed to a person is Archivo. There is no third font and no third register.",
+        "section": "typography"
+      },
+      {
+        "name": "The Stamped Caps Rule",
+        "body": "Mono is always uppercase and always tracked at 0.06em or wider; the smaller it gets, the wider it tracks. Archivo is uppercase only at Display and Headline, and never tracked positively.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tabular Figures Rule",
+        "body": "Every number that sits in a column, a table, or a spec pair carries font-variant-numeric: tabular-nums. Digits must align down the page or the drawing reads as sloppy.",
+        "section": "typography"
+      },
+      {
+        "name": "The Cell Rule",
+        "body": "No dimension is authored in a raw pixel value unless it is a hairline (1px), a fixed component measure declared as a token (--header-h, --stamp-w, --rack-w), or a sub-cell detail under 8px. Everything else is a multiple of --cell.",
+        "section": "layout"
+      },
+      {
+        "name": "The Geometry-First Rule",
+        "body": "On any surface that has a specimen, the geometry is in the first viewport at every breakpoint. It is never pushed below prose, never behind a tab, and never traded for a hero image.",
+        "section": "layout"
+      },
+      {
+        "name": "The Hairline Rule",
+        "body": "Structure is drawn with 1px solid var(--rule), never with a shadow, never with a filled panel. --rule-bright marks the opening edge of a structure (a table's header, a title block's top, a register's first line); plain --rule marks every division inside it.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Physical Shadow Rule",
+        "body": "A shadow means the thing is an object. UI chrome — menus, buttons, notes, states — gets a hairline and a translucent ground instead. If it could not be picked up in the hand, it does not cast.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Zero Radius Rule",
+        "body": "border-radius is 0 on every rectangular surface, including on hover, focus, and active. A rounded corner in this system reads as imported from a different product.",
+        "section": "shapes"
+      },
+      {
+        "name": "The Dashed Absence Rule",
+        "body": "A dashed border means 'nothing has been issued here yet'. It is never a decorative stroke and never marks live content.",
+        "section": "shapes"
+      }
+    ],
+    "dos": [
+      "Do resolve every accent through var(--dye) or var(--ink). A new surface inherits the visitor's selected finish even if it has no 3D viewer on it.",
+      "Do use --ink for text and read-critical hairlines, --dye for fills, swatches, edges, and 3D material. Set type on a --dye fill in --void.",
+      "Do author every dimension as a multiple of --cell (8px) via --c1…--c16.",
+      "Do set anything a machinist would read — part numbers, materials, masses, tolerances, revisions, dates — in Azeret Mono, uppercase, tracked 0.06em+, with tabular figures.",
+      "Do draw structure with 1px solid var(--rule), and open a structure with --rule-bright.",
+      "Do keep object-fit: contain on every render and every canvas. Cropping geometry defeats the site's whole claim.",
+      "Do give absence a composed treatment: a dashed plate, a part number, a dimmed title. An unissued slot is designed, not missing.",
+      "Do keep the geometry in the first viewport at every breakpoint on any surface that has a specimen.",
+      "Do transition finish-bound properties over 0.4s var(--ease-out) so the retint reads as a single deliberate change across the whole page."
+    ],
+    "donts": [
+      "Don't hardcode a dye hex outside the :root token block or a chip's own --chip declaration. That includes 'just this once' for a new accent.",
+      "Don't add a border-radius to any rectangular surface. Zero is the system.",
+      "Don't use a shadow to separate UI from its background. Hairline and translucent ground; shadows are for objects that could be picked up.",
+      "Don't introduce a third typeface, a third type register, or positive tracking on Archivo.",
+      "Don't use red for anything except the uncontrolled-copy marker and the placeholder-mesh note.",
+      "Don't turn the register into a card grid. Rows are read across; tiles are the anti-reference.",
+      "Don't let a static render stand in for geometry that could be shown live. The poster is a fallback and a first paint, never the destination.",
+      "Don't apply backdrop-filter to anything that is not genuinely over the moving viewer. Three surfaces earn it; a fourth is decoration.",
+      "Don't animate anything beyond the .seat arrival and state feedback. The specimen is the moving thing on this site."
+    ]
+  }
+}

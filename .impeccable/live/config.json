@@ -1,0 +1,7 @@
+{
+  "files": ["index.html", "projects/**/*.html"],
+  "exclude": ["tools/**"],
+  "insertBefore": "</body>",
+  "commentSyntax": "html",
+  "cspChecked": true
+}

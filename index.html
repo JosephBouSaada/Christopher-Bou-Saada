@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en" class="no-js" data-finish="gold">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Christopher Vale — Mechanical Design &amp; CAD</title>
+<meta name="description" content="Mechanical parts and assemblies you can rotate in the browser. Real geometry, stamped specs, and the revision history behind each part.">
+<meta name="theme-color" content="#16181a">
+<meta property="og:title" content="Christopher Vale — Mechanical Design &amp; CAD">
+<meta property="og:description" content="Mechanical parts and assemblies you can rotate in the browser. Real geometry, not renders of it.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/azeret-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/site.css">
+<script type="importmap">
+{
+  "imports": {
+    "three": "./vendor/three/three.module.min.js",
+    "three/addons/": "./vendor/three/"
+  }
+}
+</script>
+<script defer src="assets/js/finishes.js"></script>
+<script defer src="assets/js/site.js"></script>
+</head>
+<body>
+<!--
+DIRECTION CONTRACT
+THESIS: Every project is a machined sample coupon you can pick up and re-finish, not a render tile; this refuses the dark portfolio grid of glowing cards.
+OWN-WORLD: Type III hardcoat graphite ground, bead-blast aluminium type, a full Type II anodize dye rack carrying the page accent; Archivo stamped wide, Azeret Mono spec rows; drilled coupons, hairline rules, one 8px cell governing every dimension.
+STORY: A recruiter sees real geometry turning, grabs it, changes its finish, reads the revision table, and mails Christopher.
+FIRST VIEWPORT: Full-bleed datum field; the specimen seated upper-right; the spec stamp column pinned left; the dye rack pinned right; headline and primary action seated in the composed lower-left void.
+FORM: The Finish Sample Card, candidate 6 of 7 grounded directions, seed key 66124021.
+FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md
+-->
+<a class="skip" href="#work">Skip to the work</a>
+
+<!-- PLACEHOLDER MARKER. Delete this block once Christopher's real material is in. -->
+<div class="issue-strip">
+  <b>Uncontrolled copy — not for issue</b>
+  <span>Every part, figure and contact detail below is placeholder content pending Christopher's material.</span>
+</div>
+
+<header class="nameplate">
+  <a class="nameplate__mark" href="#top">
+    <b>Christopher Vale</b>
+    <em>Mechanical design</em>
+  </a>
+  <nav class="nameplate__nav" aria-label="Primary">
+    <a href="#work">Work</a>
+    <a href="#capability" class="hide-sm">Capability</a>
+    <a href="#contact" class="is-primary">Contact</a>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- ======================================================= the specimen -->
+  <section class="coupon-test" aria-labelledby="hero-title">
+    <div class="coupon-test__field" aria-hidden="true"></div>
+
+    <div class="viewer viewer--hero"
+         data-model="assets/models/mb-0142-motor-mount.stl"
+         data-shift="-0.17,0.15"
+         data-fit="1.72"
+         data-fit-portrait="1.3">
+      <img class="viewer__poster" src="assets/renders/mb-0142-motor-mount.webp"
+           alt="Rendered view of the MB-0142 motor mount face plate: a milled aluminium plate with a central bearing boss and four bolt holes.">
+      <canvas class="viewer__canvas" tabindex="0" role="application"
+              aria-label="Interactive 3D model of part MB-0142. Drag to rotate, scroll to zoom. With the keyboard: arrow keys rotate, plus and minus zoom, R resets the view."></canvas>
+      <div class="viewer__state" data-state-el>
+        <span data-state-text>Loading specimen</span>
+        <span class="viewer__bar"><i></i></span>
+      </div>
+      <!-- PLACEHOLDER MARKER. Delete with the issue strip. -->
+      <p class="viewer__note">Placeholder mesh. Christopher's export drops in here.</p>
+      <div class="viewer__readout">
+        <span>Drag to rotate</span>
+        <b>·</b>
+        <span class="pointer-fine">Scroll to zoom</span>
+        <span class="pointer-coarse">Pinch to zoom</span>
+        <button type="button" class="viewer__reset">Reset</button>
+      </div>
+    </div>
+
+    <div class="specstamp">
+      <p class="specstamp__head">Specimen under test</p>
+      <dl>
+        <div><dt>Part no.</dt><dd>MB-0142</dd></div>
+        <div><dt>Material</dt><dd>6061-T6</dd></div>
+        <div><dt>Process</dt><dd>3-axis mill</dd></div>
+        <div><dt>Finish</dt><dd data-live-finish>AN-2G</dd></div>
+        <div><dt>Roughness</dt><dd data-live-ra>0.8 µm</dd></div>
+        <div><dt>Mass</dt><dd>412 g</dd></div>
+        <div><dt>Mesh</dt><dd>11 400 tri</dd></div>
+      </dl>
+    </div>
+
+    <div class="dyerack">
+      <p class="dyerack__head" id="dye-rack-label">Finish</p>
+      <div class="dyerack__list" role="group" aria-labelledby="dye-rack-label">
+        <button type="button" class="chip" data-finish="natural" style="--chip:#c3cacd" aria-pressed="false">
+          <span>Bead blast<small>BB</small></span>
+        </button>
+        <button type="button" class="chip" data-finish="clear" style="--chip:#9fb0ba" aria-pressed="false">
+          <span>Clear anodize<small>AN-2C</small></span>
+        </button>
+        <button type="button" class="chip" data-finish="black" style="--chip:#2a2d30" aria-pressed="false">
+          <span>Hardcoat<small>AN-3K</small></span>
+        </button>
+        <button type="button" class="chip" data-finish="gold" style="--chip:#d99a2b" aria-pressed="true">
+          <span>Gold dye<small>AN-2G</small></span>
+        </button>
+        <button type="button" class="chip" data-finish="red" style="--chip:#c93c2b" aria-pressed="false">
+          <span>Red dye<small>AN-2R</small></span>
+        </button>
+        <button type="button" class="chip" data-finish="blue" style="--chip:#2f79d8" aria-pressed="false">
+          <span>Blue dye<small>AN-2B</small></span>
+        </button>
+        <button type="button" class="chip" data-finish="violet" style="--chip:#8a52d6" aria-pressed="false">
+          <span>Violet dye<small>AN-2V</small></span>
+        </button>
+        <button type="button" class="chip" data-finish="olive" style="--chip:#6f9a3a" aria-pressed="false">
+          <span>Olive dye<small>AN-2O</small></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="coupon-test__say">
+      <h1 class="display" id="hero-title">This is the <i>real geometry</i>.</h1>
+      <p class="lede">Not a picture of a part — the part. Turn it over, look down the bore,
+        change the finish it would ship in.</p>
+      <p class="nojs-note stamp mt-4">3D requires JavaScript. Every part is shown as a rendered plate below.</p>
+      <div class="coupon-test__actions">
+        <a class="btn" href="#work">See the work</a>
+        <a class="btn btn--ghost" href="#contact">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= the rack -->
+  <section class="band" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <div class="band__head">
+        <h2 class="display" id="work-title">The rack</h2>
+        <p>Six coupons in the drawer. Each carries its specification, its revision
+          history, and the model itself.</p>
+      </div>
+
+      <div class="register">
+        <div class="register__head" aria-hidden="true">
+          <span>Coupon</span>
+          <span>Description</span>
+          <span><span>Part no.</span><span>Envelope</span><span>Material</span><span>Mass</span></span>
+          <span>Finish</span>
+          <span></span>
+        </div>
+
+        <a class="row seat" href="projects/mb-0142/" style="--chip:#d99a2b">
+          <span class="row__plate">
+            <img src="assets/renders/mb-0142-motor-mount.webp" alt="" loading="lazy" width="960" height="720">
+            <span class="row__live">3D</span>
+          </span>
+          <span class="row__id">
+            <b>Motor mount face plate</b>
+            <i>NEMA 34 stepper mount for a gantry axis, with a bearing boss taken through in one setup.</i>
+          </span>
+          <span class="row__spec">
+            <span class="pn">MB-0142</span>
+            <span class="env">132 × 96 × 26</span>
+            <span>6061-T6</span>
+            <span class="mass">412 g</span>
+          </span>
+          <span class="row__fin">AN-2G</span>
+          <svg class="ico" width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M1.5 7.5h11M8.5 3.5l4 4-4 4" stroke="currentColor" stroke-width="1.25" stroke-linecap="square"/></svg>
+        </a>
+
+        <a class="row seat" href="projects/pl-0206/" style="--chip:#9fb0ba">
+          <span class="row__plate">
+            <img src="assets/renders/pl-0206-v-belt-pulley.webp" alt="" loading="lazy" width="960" height="720">
+            <span class="row__live">3D</span>
+          </span>
+          <span class="row__id">
+            <b>V-belt drive pulley</b>
+            <i>SPZ-section pulley turned from bar, keyed hub, balanced for a 3 000 rpm spindle drive.</i>
+          </span>
+          <span class="row__spec">
+            <span class="pn">PL-0206</span>
+            <span class="env">⌀98 × 26</span>
+            <span>6061-T6</span>
+            <span class="mass">268 g</span>
+          </span>
+          <span class="row__fin">AN-2C</span>
+          <svg class="ico" width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M1.5 7.5h11M8.5 3.5l4 4-4 4" stroke="currentColor" stroke-width="1.25" stroke-linecap="square"/></svg>
+        </a>
+
+        <a class="row seat" href="projects/pc-0318/" style="--chip:#c93c2b">
+          <span class="row__plate">
+            <img src="assets/renders/pc-0318-planet-carrier.webp" alt="" loading="lazy" width="960" height="720">
+            <span class="row__live">3D</span>
+          </span>
+          <span class="row__id">
+            <b>Planet carrier</b>
+            <i>Three-pin carrier for a 4:1 planetary reduction, with integral pin bosses to delete a press fit.</i>
+          </span>
+          <span class="row__spec">
+            <span class="pn">PC-0318</span>
+            <span class="env">⌀110 × 38</span>
+            <span>7075-T6</span>
+            <span class="mass">604 g</span>
+          </span>
+          <span class="row__fin">AN-2R</span>
+          <svg class="ico" width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M1.5 7.5h11M8.5 3.5l4 4-4 4" stroke="currentColor" stroke-width="1.25" stroke-linecap="square"/></svg>
+        </a>
+
+        <a class="row seat" href="projects/mn-0421/" style="--chip:#2a2d30">
+          <span class="row__plate">
+            <img src="assets/renders/mn-0421-manifold-block.webp" alt="" loading="lazy" width="960" height="720">
+            <span class="row__live">3D</span>
+          </span>
+          <span class="row__id">
+            <b>Four-port manifold block</b>
+            <i>Hydraulic manifold with cross-drilled galleries, laid out so every port is reachable by a standard fitting.</i>
+          </span>
+          <span class="row__spec">
+            <span class="pn">MN-0421</span>
+            <span class="env">96 × 64 × 42</span>
+            <span>6061-T6</span>
+            <span class="mass">892 g</span>
+          </span>
+          <span class="row__fin">AN-3K</span>
+          <svg class="ico" width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M1.5 7.5h11M8.5 3.5l4 4-4 4" stroke="currentColor" stroke-width="1.25" stroke-linecap="square"/></svg>
+        </a>
+
+        <a class="row seat" href="projects/sh-0537/" style="--chip:#2f79d8">
+          <span class="row__plate">
+            <img src="assets/renders/sh-0537-spindle-housing.webp" alt="" loading="lazy" width="960" height="720">
+            <span class="row__live">3D</span>
+          </span>
+          <span class="row__id">
+            <b>Flanged spindle housing</b>
+            <i>Bearing housing for an 80 mm spindle, bored and flanged in one chucking to hold concentricity.</i>
+          </span>
+          <span class="row__spec">
+            <span class="pn">SH-0537</span>
+            <span class="env">⌀124 × 64</span>
+            <span>6061-T6</span>
+            <span class="mass">1.14 kg</span>
+          </span>
+          <span class="row__fin">AN-2B</span>
+          <svg class="ico" width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M1.5 7.5h11M8.5 3.5l4 4-4 4" stroke="currentColor" stroke-width="1.25" stroke-linecap="square"/></svg>
+        </a>
+
+        <a class="row seat" href="projects/tl-0663/" style="--chip:#6f9a3a">
+          <span class="row__plate">
+            <img src="assets/renders/tl-0663-chassis-rail.webp" alt="" loading="lazy" width="960" height="720">
+            <span class="row__live">3D</span>
+          </span>
+          <span class="row__id">
+            <b>Formed chassis rail</b>
+            <i>Brake-formed 2.5 mm channel with the bend allowance worked back into the flat pattern.</i>
+          </span>
+          <span class="row__spec">
+            <span class="pn">TL-0663</span>
+            <span class="env">168 × 46 × 30</span>
+            <span>5052-H32</span>
+            <span class="mass">386 g</span>
+          </span>
+          <span class="row__fin">PC-06</span>
+          <svg class="ico" width="15" height="15" viewBox="0 0 15 15" fill="none" aria-hidden="true"><path d="M1.5 7.5h11M8.5 3.5l4 4-4 4" stroke="currentColor" stroke-width="1.25" stroke-linecap="square"/></svg>
+        </a>
+
+        <div class="row row--ghost seat">
+          <span class="row__plate"><span>07</span></span>
+          <span class="row__id">
+            <b>Reserved</b>
+            <i>The next coupon is issued into this slot.</i>
+          </span>
+          <span class="row__spec"><span class="pn">—</span></span>
+        </div>
+
+        <div class="row row--ghost seat">
+          <span class="row__plate"><span>08</span></span>
+          <span class="row__id">
+            <b>Reserved</b>
+            <i>The next coupon is issued into this slot.</i>
+          </span>
+          <span class="row__spec"><span class="pn">—</span></span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================================== capability -->
+  <section class="band" id="capability" aria-labelledby="cap-title">
+    <div class="wrap">
+      <div class="band__head">
+        <h2 class="display" id="cap-title">Capability</h2>
+        <p>What Christopher works in, and what he can take from a sketch to a
+          drawing a shop will quote from.</p>
+      </div>
+
+      <div class="two-col">
+        <table class="spectable">
+          <caption>Modelling &amp; manufacture</caption>
+          <tbody>
+            <tr><th scope="row">CAD</th><td>SolidWorks, Fusion 360</td></tr>
+            <tr><th scope="row">Modelling</th><td>Parts, assemblies, weldments, sheet metal</td></tr>
+            <tr><th scope="row">Drawings</th><td>ISO / ASME Y14.5, GD&amp;T, tolerance stacks</td></tr>
+            <tr><th scope="row">Processes</th><td>3- and 4-axis milling, turning, brake forming, laser</td></tr>
+            <tr><th scope="row">Materials</th><td>6061, 7075, 5052, mild and stainless steel, engineering plastics</td></tr>
+            <tr><th scope="row">Finishes</th><td>Anodize Type II &amp; III, powder coat, bead blast, passivation</td></tr>
+          </tbody>
+        </table>
+
+        <table class="spectable">
+          <caption>How a part gets issued</caption>
+          <thead>
+            <tr><th scope="col">Stage</th><th scope="col">What comes out of it</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row" class="rev">01</th><td>Requirement and envelope agreed in writing before geometry exists</td></tr>
+            <tr><th scope="row" class="rev">02</th><td>Concept model, checked against the mating parts it has to live with</td></tr>
+            <tr><th scope="row" class="rev">03</th><td>Manufacturability review: tool access, setups, standard stock</td></tr>
+            <tr><th scope="row" class="rev">04</th><td>Detail model with the tolerances that actually matter called out</td></tr>
+            <tr><th scope="row" class="rev">05</th><td>Drawing, STEP, and a mesh export a shop can quote from</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ========================================================== title block -->
+<footer class="titleblock" id="contact">
+  <div class="titleblock__grid">
+    <div class="titleblock__cell titleblock__issuer">
+      <span class="k">Issued by</span>
+      <span class="v">Christopher Vale</span>
+      <p class="stamp" style="text-transform:none;letter-spacing:0.02em;line-height:1.6">
+        Available for mechanical design work and full-time engineering roles.
+      </p>
+    </div>
+    <div class="titleblock__cell">
+      <span class="k">Email</span>
+      <span class="v"><a href="mailto:hello@example.com">hello@example.com</a></span>
+      <span class="k">Location</span>
+      <span class="v" style="font-size:0.875rem">City, Country</span>
+    </div>
+    <div class="titleblock__cell">
+      <span class="k">Elsewhere</span>
+      <span class="v" style="font-size:0.875rem"><a href="#contact">LinkedIn</a></span>
+      <span class="v" style="font-size:0.875rem"><a href="#contact">GrabCAD</a></span>
+      <span class="v" style="font-size:0.875rem"><a href="#contact">Résumé (PDF)</a></span>
+    </div>
+  </div>
+  <div class="titleblock__foot">
+    <span>Sheet 1 of 1 · Rev A</span>
+    <span>Drawn by C. Vale</span>
+    <span>&copy; <span data-year>2026</span> Christopher Vale</span>
+  </div>
+</footer>
+
+<div id="finish-live" class="vh" role="status" aria-live="polite"></div>
+</body>
+</html>
