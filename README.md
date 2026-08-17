@@ -21,7 +21,8 @@ below is real. Replace it, then delete the strip.
 | Footer, `index.html` | "Available for mechanical design work and full-time engineering roles." | Confirm this is true |
 | `index.html` → Capability | CAD packages, processes, materials, finishes | What he actually uses |
 | `index.html` → Capability | "How a part gets issued" (5 stages) | His real working method, or delete the table |
-| `WH-0784` | Material, process, mass, tolerance, prose, revision history | His real figures. Envelope and mesh stats are measured from the model and are already correct |
+| All three coupons | Material, process, mass, tolerance, prose, revision history | His real figures. Envelope and mesh stats are measured from the models and are already correct |
+| `CR-0964` envelope | `190 × 81 × 23 mm`, assumed from a 10× file scale | Confirm the export units |
 
 **Nothing on this site invents a client, employer, award, testimonial, or
 years-of-experience figure.** Keep it that way: an empty rack slot is better
@@ -55,7 +56,8 @@ Each part must be exported to a web format first:
 | **GLB / glTF** | Fusion 360 exports directly; SolidWorks needs a plugin or a Blender round-trip | Carries its own materials and colours |
 
 The loader picks the path from the file extension. Both are already exercised:
-`WH-0784` ships as GLB. Both paths are supported; see the export notes above.
+`WH-0784` ships as GLB; `PS-0891` and `CR-0964` as binary STL. Both paths are
+exercised; see the export notes above.
 
 ### Export settings that matter
 
@@ -164,7 +166,7 @@ python3 -m http.server 8000
 ## How it is put together
 
 ```
-index.html              the rack — hero specimen, one coupon, capability, title block
+index.html              the rack — hero specimen, three coupons, capability, title block
 projects/<part-no>/     one page per coupon; plain static HTML
 assets/css/site.css     the whole design system, one file, commented by section
 assets/js/finishes.js   the dye rack: chip colour, text ink, PBR values, spec rows

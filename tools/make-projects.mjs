@@ -53,6 +53,76 @@ const PROJECTS = [
       ['D', 'Released for quote', 'Bead seat Ra 0.8 called, tie-bolt torque noted on the face'],
     ],
   },
+  {
+    pn: 'PS-0891',
+    slug: 'ps-0891',
+    file: 'ps-0891-piston',
+    model: 'ps-0891-piston.stl',
+    title: 'Piston',
+    finish: 'black',
+    lede: 'A piston turned and milled from bar, with the crown, ring lands and gudgeon bore cut around a single datum so the skirt stays true to the pin axis.',
+    prose: [
+      'A piston is a stack of features that all answer to one axis. If the ring lands, the skirt and the gudgeon bore are cut in separate setups, each transfer adds its own error, and the part that leaves the shop is square to nothing in particular.',
+      'This one is turned complete before the pin bore is put in, so the bore is located from the finished skirt rather than from a chucked blank. The lands are cut in the same operation as the outside diameter, which keeps them concentric to it without a second reference.',
+      'The crown is left proud and faced last. It is the one surface that can be adjusted without disturbing anything else, so it is the one that absorbs the compression-height decision at the end.',
+    ],
+    spec: [
+      ['Material', '4032-T6'],
+      ['Process', 'CNC turn, mill'],
+      ['Envelope', '&#8960;70 &times; 40 mm'],
+      ['Mass', '242 g'],
+      ['Key tolerance', 'Gudgeon bore to skirt axis'],
+      ['Mesh', '10 292 triangles &middot; 503 KB'],
+    ],
+    constraints: [
+      ['Envelope', '&#8960;70 &times; 40 mm'],
+      ['Datum', 'Skirt outside diameter, cut before the pin bore'],
+      ['Lands', 'Concentric to the skirt within one setup'],
+      ['Crown', 'Faced last so compression height stays adjustable'],
+      ['Must not', 'require a second chucking to locate the pin bore'],
+    ],
+    revisions: [
+      ['A', 'First issue', 'Pin bore located from the blank'],
+      ['B', 'Datum moved to the skirt', 'Bore now cut from a finished reference'],
+      ['C', 'Lands cut with the OD', 'Concentricity became a machine tolerance'],
+      ['D', 'Released for quote', 'Crown faced last, compression height called on the drawing'],
+    ],
+  },
+  {
+    pn: 'CR-0964',
+    slug: 'cr-0964',
+    file: 'cr-0964-connecting-rod',
+    model: 'cr-0964-connecting-rod.stl',
+    title: 'Connecting rod',
+    finish: 'clear',
+    lede: 'A forged aluminium rod for the PS-0891 piston, with the big-end cap bolted rather than cracked so the bore can be honed as one circle after assembly.',
+    prose: [
+      'The big end is the part that decides everything else. It is a bore that has to stay round under a load that reverses twice per revolution, split across a joint that has to close again to within a few microns every time it is torqued.',
+      'So the cap is bolted and dowelled rather than fracture-split, and the bore is honed with the cap fitted and torqued. The rod and cap are then a matched pair for life &mdash; marked as such, because a cap fitted to the wrong rod puts a step in the bearing bore.',
+      'The shank is an I-beam because the rod is a column in compression and a tie in tension, and an I-section is the cheapest way to be adequate at both. The web thins toward the small end, where the inertia load it has to carry is lowest.',
+    ],
+    spec: [
+      ['Material', '2618-T61 forging'],
+      ['Process', 'CNC mill, bores honed'],
+      ['Envelope', '190 &times; 81 &times; 23 mm'],
+      ['Mass', '612 g'],
+      ['Key tolerance', '&#8960;54 H6 big-end bore'],
+      ['Mesh', '15 722 triangles &middot; 768 KB'],
+    ],
+    constraints: [
+      ['Centres', '155 mm between big and small end'],
+      ['Big end', '&#8960;54 H6, honed with the cap torqued'],
+      ['Small end', '&#8960;22 H6 for the gudgeon pin'],
+      ['Load', 'Fully reversing, twice per revolution'],
+      ['Must not', 'allow a cap to be fitted to a different rod'],
+    ],
+    revisions: [
+      ['A', 'First issue', 'Fracture-split cap'],
+      ['B', 'Cap bolted and dowelled', 'Split faces would not repeat; the bore went oval'],
+      ['C', 'Bore honed after assembly', 'Roundness measured with the cap torqued, not before'],
+      ['D', 'Released for quote', 'Rod and cap match-marked, small end thinned'],
+    ],
+  },
 ];
 
 /* ------------------------------------------------------------- the fragments */
@@ -173,8 +243,6 @@ FINISH: unreviewed and undocumented is unfinished; this build ends with the fini
               <span data-state-text>Loading specimen</span>
               <span class="viewer__bar"><i></i></span>
             </div>
-            <!-- PLACEHOLDER MARKER. Delete with the issue strip. -->
-            <p class="viewer__note">Placeholder mesh. Christopher's export drops in here.</p>
             <div class="viewer__readout">
               <span>Drag to turn it</span>
               <b>&middot;</b>

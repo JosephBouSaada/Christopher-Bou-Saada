@@ -21,6 +21,8 @@ const ROOT = path.join(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 const SPECIMENS = [
   ['wh-0784-main-wheel.glb', 'violet'],
+  ['ps-0891-piston.stl', 'black'],
+  ['cr-0964-connecting-rod.stl', 'clear'],
 ];
 
 const MIME = {

@@ -101,7 +101,7 @@ assembly relationships for themselves.
 **Explicitly undecided / not yet supplied**
 
 - Christopher's current status (student, recent graduate, or years of
-  experience), CAD software list, and whether a CV will be linked.
+  experience) and CAD software list.
 
 **Supplied since**
 
@@ -110,12 +110,13 @@ assembly relationships for themselves.
 - Email: **ChristopherBouSaada@gmail.com**, and location **Salem, NH**. Both in
   the title block on every page.
 - **LinkedIn**: `linkedin.com/in/chris-bou-saada`, the only off-site link.
-- **Declined, not pending**: GrabCAD and a linked résumé. Both rows were removed
-  rather than left as placeholders.
+- **Résumé**: supplied as `assets/christopher-bou-saada-resume.pdf` and linked
+  from the title block.
+- **Declined, not pending**: GrabCAD.
 - The rest of the project set: titles, count, context, constraints solved,
-  materials, and outcomes. One real export (WH-0784) is in; the stand-in
-  geometry that stood for the others has been removed rather than left to
-  imply work that does not exist.
+  materials, and outcomes. Three real exports are in (WH-0784, PS-0891,
+  CR-0964); the stand-in geometry that stood for the others has been removed
+  rather than left to imply work that does not exist.
 - Whether any work is under NDA or otherwise cannot be shown.
 
 ## Brand Commitments
