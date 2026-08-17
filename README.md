@@ -13,6 +13,10 @@ The site currently ships with **placeholder content**, marked by the red
 `UNCONTROLLED COPY — NOT FOR ISSUE` strip at the top of every page. Nothing
 below is real. Replace it, then delete the strip.
 
+**[CONTENT-NEEDED.md](CONTENT-NEEDED.md) is the fill-in list** — every
+placeholder, with its current value and a blank for the real one. The table
+below is the summary.
+
 ### Everything that must be replaced
 
 | Where | What is fake | Replace with |
