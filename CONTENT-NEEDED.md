@@ -6,7 +6,7 @@ Every authored placeholder currently live at
 Anything that stays blank should be **deleted** from the site, not shipped — an
 absent row beats an invented one.
 
-Progress: **0 / 69**
+Progress: **0 / 65** content items (+ 3 ship steps)
 
 **Already real, do not touch:** name, email, location, LinkedIn, résumé PDF, the
 three model files, all three envelopes, all three mesh counts.
